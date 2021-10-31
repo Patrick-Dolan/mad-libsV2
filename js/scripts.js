@@ -17,6 +17,7 @@ $(document).ready(function() {
     $(".verb").append(verbInput);
     $(".noun").append(nounInput);
     //Story Display Logic
+    $("#story1,#story2,#story3,#story4,#story5").hide();
     switch(storyNumber) {
       case 1:
         $("#story1").show();
