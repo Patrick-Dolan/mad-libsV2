@@ -13,18 +13,6 @@
     <div class="jumbotron">
       <h1>Mad-Libs</h1>
     </div>
-    <!-- Switch Story section-->
-    <div id="switchStoryGroup">
-      <h4>Other Stories:</h4>
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary" id="story1Switch">An Adventure in the Woods</button>
-        <button type="button" class="btn btn-primary" id="story2Switch">A City Adventure</button>
-        <button type="button" class="btn btn-primary" id="story3Switch">An Island Adventure</button>
-        <button type="button" class="btn btn-primary" id="story4Switch">A Lazy Adventure</button>
-        <button type="button" class="btn btn-primary" id="story5Switch">A Programming Adventure</button>
-      </div>
-      <button type="button" class="btn btn-outline-primary btn-block" id="refreshPageButton">Refresh Page to change words</button>
-    </div>
     <!-- Form -->
     <div class="card" id="fullFormSection">
       <div class="card-body">
@@ -85,68 +73,87 @@
           <button type="submit" class="btn btn-primary btn-block">Show me the story</button>
         </form>
       </div>
-    </div> 
-    <!-- Story Cards -->
-    <div id="story1" class="card bg-dark text-white">
-      <div class="card-body">
-          <h1 class="card-title">An Adventure in the Woods</h1>
-          <hr>
-          <p>
-            One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when 
-            suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1">
-            </span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, 
-            <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.
-          </p>
+    </div>     
+    <!-- Story section-->
+    <div class="row">
+      <!-- Switch Story section-->
+      <div class="col-md-3">
+        <div id="switchStoryGroup">
+          <h4>Other Stories:</h4>
+          <div class="btn-group-vertical btn-block">
+            <button type="button" class="btn btn-outline-primary" id="story1Switch">An Adventure in the Woods</button>
+            <button type="button" class="btn btn-outline-primary" id="story2Switch">A City Adventure</button>
+            <button type="button" class="btn btn-outline-primary" id="story3Switch">An Island Adventure</button>
+            <button type="button" class="btn btn-outline-primary" id="story4Switch">A Lazy Adventure</button>
+            <button type="button" class="btn btn-outline-primary" id="story5Switch">A Programming Adventure</button>
+            <button type="button" class="btn btn-outline-danger" id="refreshPageButton">Refresh Page to change words</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="story2" class="card bg-dark text-white">
-      <div class="card-body">
-        <h1 class="card-title">A City Adventure</h1>
-        <hr>
-        <p>
-          Once while <span class="person1"></span> was walking through the city they ran into <span class="person2"></span> who in 
-          a murderous rage shouted "<span class="exclamation"></span>!!!" <span class="person2"></span> then brandished their <span class="noun"></span> 
-          and ran screaming at poor <span class="person1"></span>. Not quite knowing what to do <span class="person1"></span> jumped on a
-          nearby <span class="animal"></span> that took off running with its new passengger aloft. As they raced down the road there was a giant 
-          fissue in the road that they easily <span class="verb"></span> over and got away with their lives.
-        </p>
-      </div>
-    </div>
-    <div id="story3" class="card bg-dark text-white">
-      <div class="card-body">
-        <h1 class="card-title">An Island Adventure</h1>
-        <hr>
-        <p>
-          It was a dark night on the island when <span class="person1"></span> heard a splash from the water outside their cave. Feeling obligated 
-          to investigate the noise, but also being a lazy sort of person, they woke up <span class="person2"></span> to do it instead. <span class="person2"></span>  
-          who was used to this kind of treatment got up and <span class="verb"></span> out of the cave coming face to face with an enormous <span class="animal"></span>.
-          <span class="person2"></span> looked up at the immense creature and exclaimed, "<span class="exclamation"></span>!!!" With thoughts of escape on their mind the nervous 
-          <span class="person1"></span> grabbed their prized <span class="noun"></span> and ran for the caves entrance... Only to find <span class="person2"></span> 
-          having a nice conversation with their new <span class="animal"></span> friend about the merits of their island home. 
-        </p>
-      </div>
-    </div>
-    <div id="story4" class="card bg-dark text-white">
-      <div class="card-body">
-        <h1 class="card-title">A Lazy Adventure</h1>
-        <hr>
-        <p>
-          If <span class="person1"></span> had the work ethic of <span class="person2"></span> maybe this story wouldn't be so short. I mean this story stinks, it smells a bit like a <span class="animal"></span> 
-          that <span class="verb"></span> a <span class="noun"></span> while yelling out "<span class="exclamation"></span>!" 
-        </p>
-      </div>
-    </div>
-    <div id="story5" class="card bg-dark text-white">
-      <div  class="card-body">
-        <h1 class="card-title">A Programming Adventure</h1>
-        <hr>
-        <p>
-          <span class="person1"></span> started at a coding school recently and heard about the rubber <span class="animal"></span> method... Or was it something else... Anyway 
-          <span class="person2"></span> was their pair programming partner and while they <span class="verb"></span> their code all of a sudden <span class="person1"></span> 
-          exclaimed "<span class="exclamation"></span>!!!" <span class="person2"></span> asked what was wrong and <span class="person1"></span> simply stated that they forgot a semi-colon 
-          which led to them forgetting to call on the <span class="noun"></span> method. <span class="person2"></span> was very curious what kind of program needed a <span class="noun"></span> 
-          method but was too afraid to ask.
-        </p>
+      <!-- Story Cards -->
+      <div class="col-md-9">
+        <div id="story1" class="card bg-dark text-white">
+          <div class="card-body">
+              <h1 class="card-title">An Adventure in the Woods</h1>
+              <hr>
+              <p>
+                One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when 
+                suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1">
+                </span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, 
+                <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.
+              </p>
+          </div>
+        </div>
+        <div id="story2" class="card bg-dark text-white">
+          <div class="card-body">
+            <h1 class="card-title">A City Adventure</h1>
+            <hr>
+            <p>
+              Once while <span class="person1"></span> was walking through the city they ran into <span class="person2"></span> who in 
+              a murderous rage shouted "<span class="exclamation"></span>!!!" <span class="person2"></span> then brandished their <span class="noun"></span> 
+              and ran screaming at poor <span class="person1"></span>. Not quite knowing what to do <span class="person1"></span> jumped on a
+              nearby <span class="animal"></span> that took off running with its new passengger aloft. As they raced down the road there was a giant 
+              fissue in the road that they easily <span class="verb"></span> over and got away with their lives.
+            </p>
+          </div>
+        </div>
+        <div id="story3" class="card bg-dark text-white">
+          <div class="card-body">
+            <h1 class="card-title">An Island Adventure</h1>
+            <hr>
+            <p>
+              It was a dark night on the island when <span class="person1"></span> heard a splash from the water outside their cave. Feeling obligated 
+              to investigate the noise, but also being a lazy sort of person, they woke up <span class="person2"></span> to do it instead. <span class="person2"></span>  
+              who was used to this kind of treatment got up and <span class="verb"></span> out of the cave coming face to face with an enormous <span class="animal"></span>.
+              <span class="person2"></span> looked up at the immense creature and exclaimed, "<span class="exclamation"></span>!!!" With thoughts of escape on their mind the nervous 
+              <span class="person1"></span> grabbed their prized <span class="noun"></span> and ran for the caves entrance... Only to find <span class="person2"></span> 
+              having a nice conversation with their new <span class="animal"></span> friend about the merits of their island home. 
+            </p>
+          </div>
+        </div>
+        <div id="story4" class="card bg-dark text-white">
+          <div class="card-body">
+            <h1 class="card-title">A Lazy Adventure</h1>
+            <hr>
+            <p>
+              If <span class="person1"></span> had the work ethic of <span class="person2"></span> maybe this story wouldn't be so short. I mean this story stinks, it smells a bit like a <span class="animal"></span> 
+              that <span class="verb"></span> a <span class="noun"></span> while yelling out "<span class="exclamation"></span>!" 
+            </p>
+          </div>
+        </div>
+        <div id="story5" class="card bg-dark text-white">
+          <div  class="card-body">
+            <h1 class="card-title">A Programming Adventure</h1>
+            <hr>
+            <p>
+              <span class="person1"></span> started at a coding school recently and heard about the rubber <span class="animal"></span> method... Or was it something else... Anyway 
+              <span class="person2"></span> was their pair programming partner and while they <span class="verb"></span> their code all of a sudden <span class="person1"></span> 
+              exclaimed "<span class="exclamation"></span>!!!" <span class="person2"></span> asked what was wrong and <span class="person1"></span> simply stated that they forgot a semi-colon 
+              which led to them forgetting to call on the <span class="noun"></span> method. <span class="person2"></span> was very curious what kind of program needed a <span class="noun"></span> 
+              method but was too afraid to ask.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
