@@ -12,7 +12,7 @@ $(document).ready(function() {
     $(".exclamation").append(exclamationInput);
     $(".verb").append(verbInput);
     $(".noun").append(nounInput);
-    $("#formOne").slideUp();    
+    $("#fullFormSection").slideUp();
     //Story choice Logic
     const storyChoice = $("#storyChoice").val();
     const storyNumber = parseInt(storyChoice.charAt(0));    

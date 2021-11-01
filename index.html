@@ -5,50 +5,56 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>A fantastical adventure!</title>
+  <title>Mad-Libs Time!</title>
 </head>
 <body>
   <div class="container">
+    <!-- Jumbortron -->
+    <div class="jumbotron">
+      <h1>Mad-Libs</h1>
+    </div>
     <!-- Form -->
-    <h1>Fill in the blanks to write your story!</h1>
-    <div>
-      <form id="formOne">
-        <div class="form-group">
-          <label for="storyChoice">Example select</label>
-          <select class="form-control" id="storyChoice">
-            <option value="1">1 - An Adventure in the Woods</option>
-            <option value="2">2 - A City Adventure</option>
-            <option value="3">3 - An Island Adventure</option>
-            <option value="4">4 - A Lazy Adventure</option>
-            <option value="5">5 - A Programming Adventure</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="person1">A name:</label>
-          <input id="person1" class="form-control" type="text">
-        </div>
-        <div class=form-group>
-          <label for="person2">Another name:</label>
-          <input id="person2" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="animal">An animal:</label>
-          <input id="animal" class="form-control" type="text">
-        </div>
-        <div>
-          <label for="exclamation">An exclamation:</label>
-          <input id="exclamation" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="verb">A past-tense verb:</label>
-          <input id="verb" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="noun">A noun:</label>
-          <input id="noun" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Show me the story</button>
-      </form>
+    <div class="card" id="fullFormSection">
+      <div class="card-body">
+        <h2 class="card-title">Fill in the blanks to write your story!</h2>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="storyChoice">Example select</label>
+            <select class="form-control" id="storyChoice">
+              <option value="1">1 - An Adventure in the Woods</option>
+              <option value="2">2 - A City Adventure</option>
+              <option value="3">3 - An Island Adventure</option>
+              <option value="4">4 - A Lazy Adventure</option>
+              <option value="5">5 - A Programming Adventure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="person1">A name:</label>
+            <input id="person1" class="form-control" type="text">
+          </div>
+          <div class=form-group>
+            <label for="person2">Another name:</label>
+            <input id="person2" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="animal">An animal:</label>
+            <input id="animal" class="form-control" type="text">
+          </div>
+          <div>
+            <label for="exclamation">An exclamation:</label>
+            <input id="exclamation" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="verb">A past-tense verb:</label>
+            <input id="verb" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="noun">A noun:</label>
+            <input id="noun" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Show me the story</button>
+        </form>
+      </div>
     </div> 
     <!-- Story Cards -->
     <div id="story1" class="card bg-dark text-white">
