@@ -15,14 +15,15 @@
     </div>
     <!-- Switch Story section-->
     <div id="switchStoryGroup">
+      <h4>Other Stories:</h4>
       <div class="btn-group">
-        <button type="button" class="btn btn-outline-primary" id="story1Switch">An Adventure in the Woods</button>
-        <button type="button" class="btn btn-outline-primary" id="story2Switch">A City Adventure</button>
-        <button type="button" class="btn btn-outline-primary" id="story3Switch">An Island Adventure</button>
-        <button type="button" class="btn btn-outline-primary" id="story4Switch">A Lazy Adventure</button>
-        <button type="button" class="btn btn-outline-primary" id="story5Switch">A Programming Adventure</button>
+        <button type="button" class="btn btn-primary" id="story1Switch">An Adventure in the Woods</button>
+        <button type="button" class="btn btn-primary" id="story2Switch">A City Adventure</button>
+        <button type="button" class="btn btn-primary" id="story3Switch">An Island Adventure</button>
+        <button type="button" class="btn btn-primary" id="story4Switch">A Lazy Adventure</button>
+        <button type="button" class="btn btn-primary" id="story5Switch">A Programming Adventure</button>
       </div>
-      <button type="button" class="btn btn-primary btn-block" id="refreshPageButton">Refresh Page</button>
+      <button type="button" class="btn btn-outline-primary btn-block" id="refreshPageButton">Refresh Page to change words</button>
     </div>
     <!-- Form -->
     <div class="card" id="fullFormSection">
@@ -39,29 +40,47 @@
               <option value="5">5 - A Programming Adventure</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="person1">A name:</label>
-            <input id="person1" class="form-control" type="text">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="person1">A name:</label>
+                <input id="person1" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class=form-group>
+                <label for="person2">Another name:</label>
+                <input id="person2" class="form-control" type="text">
+              </div>
+            </div>
           </div>
-          <div class=form-group>
-            <label for="person2">Another name:</label>
-            <input id="person2" class="form-control" type="text">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="animal">An animal:</label>
+                <input id="animal" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exclamation">An exclamation:</label>
+                <input id="exclamation" class="form-control" type="text">
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="animal">An animal:</label>
-            <input id="animal" class="form-control" type="text">
-          </div>
-          <div>
-            <label for="exclamation">An exclamation:</label>
-            <input id="exclamation" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="verb">A past-tense verb:</label>
-            <input id="verb" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="noun">A noun:</label>
-            <input id="noun" class="form-control" type="text">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="verb">A past-tense verb:</label>
+                <input id="verb" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="noun">A noun:</label>
+                <input id="noun" class="form-control" type="text">
+              </div>
+            </div>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Show me the story</button>
         </form>
@@ -131,6 +150,5 @@
       </div>
     </div>
   </div>
-  <!--end container-->
 </body>
 </html>
